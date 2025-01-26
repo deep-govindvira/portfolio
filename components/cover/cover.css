@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;350;400&display=swap');
+
+.cover-comp {
+    margin: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    font-family: 'Roboto Slab', 'Cambria', 'Lucida Bright', monospace, sans-serif;
+}
+.bold {
+    font-weight: bold;
+}

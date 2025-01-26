@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --purple: #b5179e;
+    --light-green: #48e5c2;
+    --dark-white: #eee;
+    --dark-black: #121212;
+    --dark-link: #809fff;
+    --dark-gray: rgb(163, 163, 163);
+    --icon-margin-right: 5px;
+}
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: calc(0.85rem + 0.3vw);
+}
+body {
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+    /* background */
+    background: url('./assets/bg/wave-light.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+/* start page */
+.start {
+    padding: 3rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+}
+.start .hi {
+    font-size: 3rem;
+    line-height: normal;
+}
+.start .hi .name {
+    color: #06234F;
+}
+.start .role {
+    font-size: 1.5rem;
+    color: var(--purple);
+}
+.dark-mode .start .hi .name {
+    color: var(--light-green);
+}
+.dark-mode .start .role {
+    color: var(--dark-gray);
+}
+
+/* content */
+.wrapper {
+    padding: 15px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper > .main-wrapper {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.wrapper > .main-wrapper > #main-wrapper {
+    width: min(55rem, 100%);
+}
+.wrapper > .footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.wrapper > .footer-wrapper > #footer-wrapper {
+    width: min(55rem, 100%);
+}
+
+/* bold */
+.bold {
+    font-weight: bold;
+}
+.dark-mode .bold {
+    font-weight: 350;
+}
+
+/* link */
+a {
+    text-decoration: none;
+    /* wrap link */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+a:hover {
+    text-decoration: underline;
+}
+.dark-mode a {
+    color: var(--dark-link);
+}
+
+/* hide & unhide */
+.hide, .mobile {
+    display: none;
+}
+.un-hide, .web {
+    display: initial;
+}
+
+.dark-mode {
+    font-weight: 300;
+    color: var(--dark-white);
+    /* background */
+    background: url('./assets/bg/wave-dark.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--dark-black);
+}
+
+/* mobile screen */
+@media screen and (max-width: 600px) {
+    .mobile {
+        display: initial;
+    }
+    .web {
+        display: none;
+    }
+}
+/* very large screen */
+@media screen and (min-width: 2500px) {
+    html {
+        font-size: calc(2rem + 0.1vw);
+    }
+}

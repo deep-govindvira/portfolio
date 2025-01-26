@@ -1,0 +1,27 @@
+.education-comp {
+    font-size: 1rem;
+}
+
+/* education header */
+.education-comp .education-header {
+    color: var(--purple);
+}
+.dark-mode .education-comp .education-header {
+    color: var(--dark-gray);
+}
+.education-comp .education-header .education-icon {
+    margin-right: var(--icon-margin-right);
+}
+
+/* education timeline */
+.education-comp .education-timeline {
+    font-size: 0.9rem;
+}
+.education-comp .education-timeline i {
+    margin-right: var(--icon-margin-right);
+}
+
+/* education course */
+.dark-mode .education-comp .education-course .course {
+    color: var(--light-green);
+}

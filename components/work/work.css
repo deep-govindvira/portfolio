@@ -1,0 +1,62 @@
+.work-comp {
+    font-size: 1rem;
+}
+
+/* work header */
+.work-comp .work-header {
+    color: var(--purple);
+}
+.dark-mode .work-comp .work-header {
+    color: var(--dark-gray);
+}
+.work-comp .work-header .work-icon {
+    margin-right: var(--icon-margin-right);
+}
+
+/* work timeline */
+.work-comp .work-timeline {
+    font-size: 0.9rem;
+}
+.work-comp .work-timeline i {
+    margin-right: var(--icon-margin-right);
+}
+
+/* work role */
+.dark-mode .work-comp .work-role .role {
+    color: var(--light-green);
+}
+
+/* work info */
+.work-comp .work-info {
+    display: flex;
+    font-size: 1rem;
+}
+.work-comp .work-info .work-logo .logo {
+    height: 6em;
+    padding: 0.8rem;
+    display: block;
+    box-sizing: border-box;
+}
+
+/* work tech */
+.work-comp .work-tech .tech {
+    margin: 0.2rem;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.7rem;
+    color: #fff;
+    border-radius: 5%;
+    background-color: #3e92ec;
+}
+
+/* amazon logo */
+.work-comp .work-info .work-logo .amazon {
+    content: url("../../assets/icons/amazon.svg");
+}
+.dark-mode .work-comp .work-info .work-logo .amazon {
+    content: url("../../assets/icons/amazon-dark.png");
+}
+
+/* kotak logo */
+.work-comp .work-info .work-logo .kotak {
+    content: url("../../assets/icons/decrypters_logo.jpeg");
+}

@@ -1,0 +1,34 @@
+.project-comp {
+    font-size: 1rem;
+}
+
+/* project header */
+.dark-mode .project-comp .project-header {
+    color: var(--dark-gray);
+}
+.project-comp .project-header .project-icon {
+    margin-right: var(--icon-margin-right);
+}
+
+/* project title */
+.project-comp .project-title {
+    color: var(--purple);
+}
+.dark-mode .project-comp .project-title {
+    color: var(--light-green);
+}
+
+/* project tech */
+.project-comp .project-tech .tech {
+    margin: 0.2rem;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.7rem;
+    color: #fff;
+    border-radius: 5%;
+    background-color: #3e92ec;
+}
+
+/* project timeline */
+.project-comp .project-timeline {
+    font-size: 0.9rem;
+}

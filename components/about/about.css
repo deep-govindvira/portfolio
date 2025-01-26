@@ -1,0 +1,37 @@
+.about-comp {
+    font-size: 1rem;
+}
+
+/* about header */
+.about-comp .about-header {
+    color: var(--purple);
+}
+.dark-mode .about-comp .about-header {
+    color: var(--dark-gray);
+}
+.about-comp .about-header .about-icon {
+    margin-right: var(--icon-margin-right);
+}
+
+/* deep govindvira */
+.about-comp .about-title .hi {
+    font-size: 2.2rem;
+    line-height: normal;
+}
+.about-comp .about-title .hi .name {
+    color: #06234F;
+}
+.dark-mode .about-comp .about-title .hi .name {
+    color: var(--light-green);
+}
+.about-comp .about-title .role {
+    font-size: 1.3rem;
+    color: var(--purple);
+}
+.dark-mode .about-comp .about-title .role {
+    color: var(--dark-gray);
+    font-weight: lighter;
+}
+.dark-mode .resume {
+    color: white;
+}

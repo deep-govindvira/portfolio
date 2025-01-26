@@ -1,0 +1,18 @@
+.contact-comp {
+    font-size: 1rem;
+}
+
+/* contact header */
+.contact-comp .contact-header {
+    color: var(--purple);
+}
+.dark-mode .contact-comp .contact-header {
+    color: var(--dark-gray);
+}
+.contact-comp .contact-header .contact-icon {
+    margin-right: var(--icon-margin-right);
+}
+
+.contact-comp .contact-site i {
+    margin-right: var(--icon-margin-right);
+}

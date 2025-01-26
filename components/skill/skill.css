@@ -1,0 +1,19 @@
+.skill-comp {
+    font-size: 1rem;
+}
+
+/* skill header */
+.skill-comp .skill-header {
+    color: var(--purple);
+}
+.dark-mode .skill-comp .skill-header {
+    color: var(--dark-gray);
+}
+.skill-comp .skill-header .skill-icon {
+    margin-right: var(--icon-margin-right);
+}
+
+/* skill title */
+.dark-mode .skill-comp .skill-title {
+    color: var(--light-green);
+}
