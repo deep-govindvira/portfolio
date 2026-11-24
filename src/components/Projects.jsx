@@ -18,7 +18,7 @@ export const Projects = ({ data }) => {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12 space-y-3">
           <p className="text-xs uppercase tracking-widest text-blue-400 font-semibold">
-            Notion & GitHub Verified
+            Kaggle & GitHub Verified
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
             🎯 Software <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400">Projects</span>
