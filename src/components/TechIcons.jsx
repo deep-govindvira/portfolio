@@ -111,8 +111,8 @@ export const TechIcon = ({ name, className = "w-4 h-4" }) => {
   // Redis
   if (norm.includes("redis")) {
     return (
-      <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+      <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+        <path d="M21.579 6.271l-9.043-5.221a1.077 1.077 0 00-1.072 0L2.421 6.271A1.074 1.074 0 001.885 7.2v9.6a1.074 1.074 0 00.536.929l9.043 5.221a1.077 1.077 0 001.072 0l9.043-5.221a1.074 1.074 0 00.536-.929V7.2a1.074 1.074 0 00-.536-.929zm-9.579-3.957l7.357 4.248-3.486 2.012-7.357-4.248 3.486-2.012zm-8.115 5.86l7.043 4.067v3.918l-7.043-4.067V8.174zm9.187 11.903v-3.918l7.043-4.067v3.918l-7.043 4.067z" />
       </svg>
     );
   }
