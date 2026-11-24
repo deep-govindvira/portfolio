@@ -13,6 +13,15 @@ import {
 export const Skills = ({ data }) => {
   const { skillCategories } = data;
   const [searchQuery, setSearchQuery] = useState("");
+  const [activeTab, setActiveTab] = useState("All");
+
+  const tabs = [
+    "All",
+    "Languages",
+    "Frameworks & Web",
+    "Databases & Cache",
+    "Cloud & Tools",
+  ];
 
   const getCategoryIcon = (iconName) => {
     switch (iconName) {
@@ -31,9 +40,17 @@ export const Skills = ({ data }) => {
 
   const filteredCategories = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
-    if (!query) return skillCategories;
 
-    return skillCategories
+    // 1. Filter by active category tab
+    const tabFiltered = skillCategories.filter((cat) => {
+      if (activeTab === "All") return true;
+      return cat.shortLabel === activeTab || cat.category === activeTab;
+    });
+
+    if (!query) return tabFiltered;
+
+    // 2. Filter by search query
+    return tabFiltered
       .map((cat) => {
         const matchingSkills = cat.skills.filter(
           (skill) =>
@@ -50,7 +67,7 @@ export const Skills = ({ data }) => {
         };
       })
       .filter((cat) => cat.skills.length > 0);
-  }, [skillCategories, searchQuery]);
+  }, [skillCategories, searchQuery, activeTab]);
 
   const totalMatchingSkills = useMemo(() => {
     return filteredCategories.reduce((acc, cat) => acc + cat.skills.length, 0);
@@ -73,7 +90,7 @@ export const Skills = ({ data }) => {
         </div>
 
         {/* Search Skill Input Bar */}
-        <div className="max-w-md mx-auto mb-10">
+        <div className="max-w-md mx-auto mb-6">
           <div className="relative group">
             <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500 group-focus-within:text-emerald-400 transition">
               <SearchIcon className="w-4 h-4" />
@@ -103,9 +120,33 @@ export const Skills = ({ data }) => {
           )}
         </div>
 
-        {/* Simplified Cards Grid */}
+        {/* Category Tabs like Software Projects */}
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
+          {tabs.map((tab) => (
+            <button
+              key={tab}
+              type="button"
+              onClick={() => setActiveTab(tab)}
+              className={`px-4 py-2 rounded-xl text-xs font-medium transition duration-200 ${
+                activeTab === tab
+                  ? "bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-md shadow-emerald-600/20"
+                  : "bg-slate-900/60 border border-slate-800 text-slate-400 hover:text-white hover:bg-slate-800/80"
+              }`}
+            >
+              {tab}
+            </button>
+          ))}
+        </div>
+
+        {/* Cards Grid */}
         {filteredCategories.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
+          <div
+            className={
+              filteredCategories.length === 1
+                ? "max-w-2xl mx-auto"
+                : "grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6"
+            }
+          >
             {filteredCategories.map((category, index) => (
               <div
                 key={index}
@@ -147,14 +188,17 @@ export const Skills = ({ data }) => {
               No skills found matching "<span className="text-emerald-400 font-semibold">{searchQuery}</span>"
             </p>
             <p className="text-xs text-slate-500 mb-4">
-              Try searching for Java, AWS, React, MySQL, Docker, or Kafka
+              Try searching across "All" categories or search for Java, AWS, React, MySQL, or Docker
             </p>
             <button
               type="button"
-              onClick={() => setSearchQuery("")}
+              onClick={() => {
+                setSearchQuery("");
+                setActiveTab("All");
+              }}
               className="text-xs font-medium px-4 py-2 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 transition"
             >
-              Clear Search
+              Reset Filters
             </button>
           </div>
         )}

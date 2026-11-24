@@ -26,3 +26,14 @@ test('filters technical skills when typing in search input', () => {
   expect(within(skillsSection).getByText('Kafka')).toBeInTheDocument();
   expect(within(skillsSection).queryByText('Angular')).not.toBeInTheDocument();
 });
+
+test('filters technical skills when clicking category tabs', () => {
+  render(<App />);
+  const skillsSection = screen.getByRole('heading', { name: /Technical Skills/i }).closest('section');
+  const languagesTab = within(skillsSection).getByRole('button', { name: 'Languages' });
+  expect(languagesTab).toBeInTheDocument();
+
+  fireEvent.click(languagesTab);
+  expect(within(skillsSection).getByText('Java')).toBeInTheDocument();
+  expect(within(skillsSection).queryByText('Docker')).not.toBeInTheDocument();
+});
