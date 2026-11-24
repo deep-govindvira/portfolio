@@ -51,8 +51,11 @@ export const Navbar = ({ data }) => {
           className="group flex items-center gap-2.5 font-bold text-lg tracking-tight text-white hover:text-blue-400 transition"
         >
           <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 via-emerald-500 to-amber-500 p-[2px] flex items-center justify-center shadow-lg shadow-blue-500/20 group-hover:scale-105 transition duration-300">
-            <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-mono font-bold text-transparent bg-clip-text bg-gradient-to-tr from-blue-400 to-emerald-400 text-sm">
-              DG
+            <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+              <span className="font-mono font-black text-sm tracking-tight flex items-center select-none">
+                <span className="text-blue-400">D</span>
+                <span className="text-emerald-400">G</span>
+              </span>
             </div>
           </div>
           <span className="font-semibold text-slate-100 group-hover:text-blue-300 transition">
