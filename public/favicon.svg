@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+  </defs>
+  <!-- Outer glowing background -->
+  <rect x="2" y="2" width="96" height="96" rx="26" fill="url(#borderGrad)" />
+  <!-- Inner dark container -->
+  <rect x="7" y="7" width="86" height="86" rx="21" fill="#020617" />
+  <!-- Brand Monogram -->
+  <text
+    x="50"
+    y="62"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Mono', 'Fira Code', 'Roboto Mono', monospace"
+    font-size="44"
+    font-weight="800"
+    text-anchor="middle"
+    fill="url(#textGrad)"
+    letter-spacing="-1.5"
+  >DG</text>
+</svg>
