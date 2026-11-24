@@ -8,6 +8,8 @@ import {
   LeetCodeIcon,
   CodeChefIcon,
   CodeforcesIcon,
+  HackerRankIcon,
+  AtCoderIcon,
   TrophyIcon,
   MapPinIcon,
 } from "./Icons";
@@ -54,6 +56,10 @@ export const Contact = ({ data }) => {
         return <CodeChefIcon className="w-5 h-5 text-orange-400" />;
       case "Codeforces":
         return <CodeforcesIcon className="w-5 h-5 text-red-400" />;
+      case "HackerRank":
+        return <HackerRankIcon className="w-5 h-5 text-emerald-400" />;
+      case "AtCoder":
+        return <AtCoderIcon className="w-5 h-5 text-cyan-400" />;
       case "Trophy":
         return <TrophyIcon className="w-5 h-5 text-yellow-400" />;
       case "GitHub":
@@ -80,7 +86,7 @@ export const Contact = ({ data }) => {
         </div>
 
         {/* Coding Profiles Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3.5 mb-12">
           {codingProfiles.map((cp) => (
             <a
               key={cp.name}

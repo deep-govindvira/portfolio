@@ -6,6 +6,8 @@ import {
   LeetCodeIcon,
   CodeChefIcon,
   CodeforcesIcon,
+  HackerRankIcon,
+  AtCoderIcon,
   MailIcon,
 } from "./Icons";
 
@@ -82,6 +84,24 @@ export const Footer = ({ data }) => {
               title="Codeforces"
             >
               <CodeforcesIcon className="w-4 h-4" />
+            </a>
+            <a
+              href={personal.social.hackerrank}
+              target="_blank"
+              rel="noreferrer"
+              className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-emerald-400 hover:border-slate-700 transition"
+              title="HackerRank"
+            >
+              <HackerRankIcon className="w-4 h-4" />
+            </a>
+            <a
+              href={personal.social.atcoder}
+              target="_blank"
+              rel="noreferrer"
+              className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-slate-700 transition"
+              title="AtCoder"
+            >
+              <AtCoderIcon className="w-4 h-4" />
             </a>
             <a
               href={personal.social.email}

@@ -5,6 +5,8 @@ import {
   LeetCodeIcon,
   CodeChefIcon,
   CodeforcesIcon,
+  HackerRankIcon,
+  AtCoderIcon,
   MailIcon,
   ChevronRightIcon,
   BriefcaseIcon,
@@ -128,6 +130,24 @@ export const Hero = ({ data }) => {
                 title="Codeforces (deep_govindvira)"
               >
                 <CodeforcesIcon className="w-4 h-4" />
+              </a>
+              <a
+                href={personal.social.hackerrank}
+                target="_blank"
+                rel="noreferrer"
+                className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 hover:text-emerald-400 hover:bg-slate-800 transition"
+                title="HackerRank (deepgovindvira)"
+              >
+                <HackerRankIcon className="w-4 h-4" />
+              </a>
+              <a
+                href={personal.social.atcoder}
+                target="_blank"
+                rel="noreferrer"
+                className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 hover:text-cyan-400 hover:bg-slate-800 transition"
+                title="AtCoder (deep_govindvira)"
+              >
+                <AtCoderIcon className="w-4 h-4" />
               </a>
               <a
                 href={personal.social.email}

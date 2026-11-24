@@ -34,6 +34,18 @@ export const CodeforcesIcon = ({ className = "w-5 h-5" }) => (
   </svg>
 );
 
+export const HackerRankIcon = ({ className = "w-5 h-5" }) => (
+  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
+    <path d="M12 0L1.608 6v12L12 24l10.392-6V6L12 0zm-2.004 15.632H7.98V8.368h2.016v2.664h4.008V8.368h2.016v7.264h-2.016V13h-4.008v2.632z" />
+  </svg>
+);
+
+export const AtCoderIcon = ({ className = "w-5 h-5" }) => (
+  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
+    <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm1.2 4.8 4 8h-2.4l-1-2.2h-3.6l-1 2.2H6.8l4-8zm-1.2 3.1-1.2 2.7h2.4z" />
+  </svg>
+);
+
 export const KaggleIcon = ({ className = "w-5 h-5" }) => (
   <svg className={className} fill="currentColor" viewBox="0 0 24 24">
     <path d="M18.825 23.859c-.022.09-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.186c0 .281-.141.422-.422.422H5.132c-.281 0-.422-.141-.422-.422V.436c0-.281.141-.422.422-.422h2.733c.281 0 .422.141.422.422v14.475l6.326-6.425c.164-.164.328-.246.492-.246h3.28c.164 0 .258.07.281.211.023.164-.035.281-.176.351l-6.842 6.701 7.053 8.482c.117.141.14.281.07.422z" />
