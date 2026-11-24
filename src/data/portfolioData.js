@@ -12,7 +12,7 @@ export const portfolioData = {
     location: "Mumbai / Nadiad, India",
     email: "deep.govindvira@gmail.com",
     shortBio:
-      "I’m a Software Engineer who looks beyond just getting code to work. I focus on understanding requirements, making thoughtful technical decisions, and taking ownership of backend, API design, and full-stack solutions built for reliability and maintainability.",
+      "I’m a Software Engineer passionate about building reliable, scalable software and solving real-world problems. My experience includes backend development, API design, full-stack applications, and AI-integrated solutions. I’m continuously exploring AI/LLM technologies and improving my engineering skills.",
     about: [
       "I’m a Software Engineer who looks beyond just getting code to work. I focus on understanding the problem, finding the right solution, and thinking through how it will perform and hold up in the long run. I focus on understanding requirements, making thoughtful technical decisions, and taking ownership of the solutions I build, from implementation to reliability and maintainability. I value writing good software, learning from challenges, and taking responsibility for what I build.",
       "My experience spans backend development, API design, and full-stack application development, with a focus on building reliable and maintainable software.",
