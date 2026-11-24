@@ -333,6 +333,7 @@ export const portfolioData = {
       location: "Nadiad, India",
       period: "June 2008 - March 2022",
       website: "https://www.yogividyapeeth.org.in/institutes/sharda-mandir-vidyalaya/",
+      logo: "school.png",
       score: "12th State Rank - 1276 | 10th: 92.5%",
       highlights: [
         "12th State Rank - 1276.",
